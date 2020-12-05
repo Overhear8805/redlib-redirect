@@ -1,5 +1,6 @@
 # Reddit to teddit
 This simple addon redirects your web browser from reddit.com and old.reddit.com to teddit.net. 
+
 https://addons.mozilla.org/en-US/firefox/addon/reddit-to-teddit-redirect/
 
 # Why teddit?
