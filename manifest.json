@@ -1,0 +1,18 @@
+{
+
+  "description": "Redirect from Reddit to teddit automagically",
+  "manifest_version": 2,
+  "name": "Teddit Redirect",
+  "version": "1.0",
+  "homepage_url": "https://github.com/simon1573/teddit-redirect",
+  "icons": {
+    "240": "icons/redirect-240.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["teddit-redirect.js"]
+    }
+  ]
+
+}
