@@ -1,7 +1,7 @@
 {
 
   "manifest_version": 2,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "name": "Teddit Redirect",
   "description": "Redirect from Reddit to teddit automagically",
   
@@ -14,7 +14,7 @@
   
   "browser_specific_settings": {
     "gecko": {
-      "id": "{bafd6b55-ef50-4bc9-a408-80587a164ec9}"
+      "id": "{fabaca19-4136-44b4-885d-9244adc75826}"
      }
   },
 
