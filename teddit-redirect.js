@@ -9,7 +9,7 @@ function onSettingsRead(item) {
   }
 
   const original_url = window.location.href
-  const new_url = original_url.replace('old.reddit.com', instance).replace('reddit.com', instance)
+  const new_url = original_url.replace('old.reddit.com', instance).replace(/(www\.)?reddit.com/, instance)
   window.location.replace(new_url)
 }
 
