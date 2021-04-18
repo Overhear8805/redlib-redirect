@@ -27,14 +27,6 @@
     "*://old.reddit.com/*"
   ],
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.reddit.com/*"],
-      "js": ["teddit-redirect.js"],
-      "run_at": "document_start"
-    }
-  ],
-
    "options_ui": {
     "page": "options.html"
   }
