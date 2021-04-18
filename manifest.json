@@ -27,6 +27,12 @@
     "*://old.reddit.com/*"
   ],
 
+  "background": {
+    "scripts": [
+        "teddit-redirect.js"
+    ]
+  },
+
    "options_ui": {
     "page": "options.html"
   }
