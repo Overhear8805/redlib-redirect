@@ -3,30 +3,35 @@
   "manifest_version": 2,
   "version": "1.2.0",
   "name": "Teddit Redirect",
-  "description": "Redirect from Reddit to teddit automagically",
-  
+  "description": "Redirect from Reddit to teddit automatically",
+
   "homepage_url": "https://github.com/simon1573/teddit-redirect",
 
 
   "icons": {
     "240": "icons/redirect-240.png"
   },
-  
+
   "browser_specific_settings": {
     "gecko": {
       "id": "{fabaca19-4136-44b4-885d-9244adc75826}"
      }
   },
 
-  "permissions": ["storage"],
-
-  "content_scripts": [
-    {
-      "matches": ["*://*.reddit.com/*"],
-      "js": ["teddit-redirect.js"],
-      "run_at": "document_start"
-    }
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "*://reddit.com/*",
+    "*://www.reddit.com/*",
+    "*://old.reddit.com/*"
   ],
+
+  "background": {
+    "scripts": [
+        "teddit-redirect.js"
+    ]
+  },
 
    "options_ui": {
     "page": "options.html"
