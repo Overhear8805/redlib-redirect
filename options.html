@@ -5,22 +5,39 @@
   </head>
 
   <style>
+		html{
+			padding: 8px;
+		}
     button, input, label {
       display: block;
       font-family: inherit;
       padding: 0px;
       margin: 0px;
-      margin-bottom: 4px;
+      margin-bottom: 0px;
       box-sizing: border-box;
     }
+		button {
+			margin-top: 8px;
+      padding: 4px 8px 4px 8px;
+		}
+		select {
+      padding: 4px 8px 4px 8px;
+		}
   </style>
   
   <body>
     <form>
-      <label>Teddit Instance</label>
-      <input type="text" id="instance" >
-      <button type="submit">Save</button>
+			<label>
+				<h3>
+					<span>Instances</span>
+				</h3>
+			</label>
+			<select id="instance" name="instance" onchange="save(this)">></select>
+      <button id="savebtn" type="submit">Save</button>
     </form>
-    <script src="options.js"></script>
+		<p>
+			Instances are loaded from <a href="https://github.com/redlib-org/redlib-instances" target="_blank">https://github.com/redlib-org/redlib-instances</a>
+		</p>
   </body>
 </html>
+<script src="options.js"></script>

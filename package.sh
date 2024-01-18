@@ -1,2 +1,2 @@
 #!/bin/bash
-zip -r -FS ../teddit-redirect.zip * --exclude '*.git*'
+zip -r -FS ../redlib-redirect.zip * --exclude '*.git*'
